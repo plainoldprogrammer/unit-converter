@@ -20,8 +20,8 @@ public class MileToKilometer {
 		Double mile = 1.0;
 		Double kilometer;
 		kilometer = mile * 1.609f;
-		jsonObject.put("Mile Value", mile);
-		jsonObject.put("Kilometer Value", kilometer);
+		jsonObject.put("mile", mile);
+		jsonObject.put("kilometer", kilometer);
 		
 		return Response.status(200).entity(jsonObject.toString()).build();
 	}
@@ -34,8 +34,8 @@ public class MileToKilometer {
 		JSONObject jsonObject = new JSONObject();
 		float kilometers;
 		kilometers = mile * 1.6f;
-		jsonObject.put("Mile Value", mile);
-		jsonObject.put("Kilometer Value", kilometers);
+		jsonObject.put("mile", mile);
+		jsonObject.put("kilometer", kilometers);
 
 		return Response.status(200).entity(jsonObject.toString()).build();
 	}

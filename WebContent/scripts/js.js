@@ -11,7 +11,7 @@ document.getElementById("convert").onclick = function()
 	if (request.status == 200)
 	{
 		console.log(data);
-		document.getElementById("converted").value = data["Kilometer Value"];
+		document.getElementById("converted").value = data["kilometer"];
 	}
 	else
 	{
