@@ -4,10 +4,20 @@
 	<body>
 		<div>
 			<h3>Unit Converter</h3>
-			<label for="original">Mile:</label>
+			<label for="unit1">From:</label>
+			<select id="unit1">
+				<option value="">--unit select--</option>
+				<option value="mile">Mile</option>
+				<option value="kilometer">Kilometer</option>
+			</select>
 			<input type="text" id="original" />
-			<label for="converted">Kilometer:</label>
-			<input type="text" id="converted" disabled/>
+			<label for="unit2">To:</label>
+			<select id="unit2">
+				<option>--unit select--</option>
+				<option value="mile">Mile</option>
+				<option value="kilometer">Kilometer</option>
+			</select>
+			<input type="text" id="converted"/>
 			<input type="submit" value="Convert" id="convert" />
 		</div>
 		<script src="scripts/js.js" type="text/javascript">
