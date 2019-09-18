@@ -16,8 +16,9 @@ document.getElementById("convert").onclick = function()
 		request.open('GET', 'http://localhost:8080/unit-converter/web-app/kilometertomileservice/' + inputValue, true);
 	}
 	
-	request.onload = function() {
-	var data = JSON.parse(this.response);
+	request.onload = function() 
+	{
+		var data = JSON.parse(this.response);
 	
 		if (request.status == 200)
 		{
